@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import Locations from './Locations'
+import ToDos from './ToDos'
 
 export default class App extends Component {
   render() {
     return (
-      <Locations/>
+      <div className="app-container">
+          <ToDos/>
+      </div>
     );
   }
 }
