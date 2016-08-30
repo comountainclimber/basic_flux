@@ -8,7 +8,7 @@ class ToDoStore {
     this.bindListeners({
       handleUpdateToDos: ToDoActions.UPDATE_TO_DOS,
       handleFetchToDos: ToDoActions.FETCH_TO_DOS,
-      handleFetchToDos: ToDoActions.ADD_TO_DO,
+      handleAddToDo: ToDoActions.ADD_TO_DO,
       handleFetchToDos: ToDoActions.DELETE_TO_DO
     });
   }
@@ -16,6 +16,10 @@ class ToDoStore {
   handleUpdateToDos(toDos) {
     this.toDos = toDos;
     this.errorMessage = null;
+  }
+
+  handleAddToDo(){
+    this.toDos = [];
   }
 
   handleFetchToDos() {
